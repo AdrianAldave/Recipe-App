@@ -1,121 +1,91 @@
 # Recipe Server App 🍳
 
-A native iOS recipe management application built with SwiftUI that allows users to browse, organize, and save their favorite recipes.
+A heartfelt iOS app preserving and sharing my grandmother's traditional Peruvian recipes. Built with SwiftUI to keep family culinary traditions alive and accessible for future generations.
+
+## About
+
+This app serves as a digital cookbook containing authentic Peruvian recipes passed down from my grandmother. It allows family members to browse, view, and add traditional recipes, ensuring these cherished family traditions are never lost.
 
 ## Features
 
-- 📱 Native iOS experience with SwiftUI
-- 🔍 Browse recipes by category
-- ➕ Add custom recipes
-- 📋 Detailed recipe views with ingredients and instructions
-- 🎨 Clean, modern UI design
-- 💾 Local data persistence
+- 📖 Browse collection of traditional Peruvian recipes
+- 🔍 View detailed recipe instructions and ingredients
+- ➕ Add new family recipes to the collection
+- 🏷️ Organize recipes by category (appetizers, mains, desserts, etc.)
+- 💚 Beautiful, intuitive SwiftUI interface
+- 📱 Native iOS experience
 
 ## Tech Stack
 
-- **Language:** Swift
-- **Framework:** SwiftUI
-- **Architecture:** MVVM (Model-View-ViewModel)
-- **Platform:** iOS
+- **SwiftUI** - Modern declarative UI framework
+- **MVVM Architecture** - Clean separation of concerns
+- **Swift** - iOS native development
+- **Xcode** - iOS development environment
 
 ## Project Structure
 
 ```
 RecipeServer/
-├── Components/
-│   ├── RecipeCard.swift          # Reusable recipe card component
-│   └── RecipeList.swift          # List view for recipes
-├── Detail/
-│   ├── AddRecipeView.swift       # Form to add new recipes
-│   ├── CategoryView.swift        # Category browsing interface
-│   └── RecipeView.swift          # Detailed recipe display
-├── Models/
-│   ├── RecipeModel.swift         # Data model for recipes
-│   └── Assets.xcassets/          # App icons and colors
+├── Views/
+│   ├── RecipeCard.swift          # Recipe preview cards
+│   ├── RecipeList.swift          # Main recipe listing
+│   └── Detail/
+│       ├── RecipeView.swift      # Full recipe details
+│       ├── AddRecipeView.swift   # Form to add new recipes
+│       └── CategoryView.swift    # Filter by category
 ├── ViewModels/
-│   └── RecipeViewModel.swift    # Business logic and state management
-├── Views/Main/
+│   └── RecipeViewModel.swift     # Business logic & data handling
+├── Models/
+│   └── RecipeModel.swift         # Recipe data structure
 └── RecipeServerApp.swift         # App entry point
 ```
 
-## Architecture
+## Installation
 
-This app follows the **MVVM** (Model-View-ViewModel) pattern:
-
-- **Model:** `RecipeModel.swift` - Defines recipe data structure
-- **View:** SwiftUI views in `Detail/` and `Components/`
-- **ViewModel:** `RecipeViewModel.swift` - Manages app state and business logic
+1. Clone the repository
+2. Open `RecipeServer.xcodeproj` in Xcode
+3. Select your target device or simulator
+4. Press `Cmd + R` to build and run
 
 ## Requirements
 
 - iOS 15.0+
 - Xcode 13.0+
-- Swift 5.5+
-
-## Installation
-
-1. Clone the repository:
-```bash
-git clone [your-repo-url]
-```
-
-2. Open the project in Xcode:
-```bash
-cd RecipeServer
-open RecipeServer.xcodeproj
-```
-
-3. Build and run:
-   - Select your target device or simulator
-   - Press `Cmd + R` to run
+- macOS 12.0+ (for development)
 
 ## Usage
 
-1. **Browse Recipes:** View all available recipes on the main screen
-2. **View Recipe Details:** Tap any recipe card to see full ingredients and instructions
-3. **Add New Recipe:** Tap the "+" button to create a new recipe
-4. **Filter by Category:** Use category view to organize recipes by type
+1. **Browse Recipes:** Scroll through the recipe list on the home screen
+2. **View Details:** Tap any recipe card to see full instructions and ingredients
+3. **Add Recipe:** Tap the '+' button to add a new family recipe
+4. **Filter by Category:** Use category view to find specific types of dishes
 
-## Key Components
+## Recipes Included
 
-### RecipeCard
-Reusable card component displaying recipe preview with image, title, and basic info.
-
-### RecipeList
-Scrollable list container for displaying multiple recipe cards.
-
-### AddRecipeView
-Form interface for creating new recipes with fields for:
-- Recipe name
-- Ingredients
-- Instructions
-- Category
-- Image
-
-### RecipeViewModel
-Handles all business logic including:
-- Recipe data management
-- Add/Edit/Delete operations
-- Category filtering
-- Data persistence
+Traditional Peruvian dishes such as:
+- Lomo Saltado
+- Ají de Gallina
+- Causa Limeña
+- Papa a la Huancaína
+- And many more family favorites!
 
 ## Future Enhancements
 
-- [ ] Cloud sync across devices
-- [ ] Recipe sharing functionality
-- [ ] Search and filter options
+- [ ] Search functionality
+- [ ] Favorite recipes
+- [ ] Share recipes with family members
+- [ ] Photo uploads for each dish
 - [ ] Cooking timer integration
-- [ ] Nutrition information
-- [ ] Shopping list generation
+- [ ] Ingredient shopping list
+
+## Personal Note
+
+This app was created to honor my grandmother's legacy and ensure her recipes continue to bring joy to our family for generations to come. Every dish tells a story of Peru and our family history.
 
 ## License
 
-Free to use for personal projects.
+Personal family project - Free to use and modify for preserving your own family recipes.
 
-## Author
+---
 
-[Your Name]
-
-## Acknowledgments
-
-Built with SwiftUI and following Apple's design guidelines.
+*Made with ❤️ to preserve Peruvian culinary traditions*
